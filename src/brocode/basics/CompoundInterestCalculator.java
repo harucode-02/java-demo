@@ -19,7 +19,7 @@ public class CompoundInterestCalculator {
         System.out.print("Enter the interest rate (in %): ");
         rate = scanner.nextDouble() / 100;
 
-        System.out.print("Enter the # of times compouned per year: ");
+        System.out.print("Enter the # of times compounded per year: ");
         timesCompounded = scanner.nextInt();
 
         System.out.print("Enter the # of years: ");

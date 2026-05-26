@@ -28,7 +28,6 @@ public class StringMethods {
               System.out.println("Hello " + name);
           }
 
-
         if(name.contains(" ")){
             System.out.println("Your name contains a space!");
         }
@@ -36,7 +35,7 @@ public class StringMethods {
             System.out.println("Your name DOESN'T contain any spaces!");
         }
         */
-        //if(name.equals("password"))
+//        if(name.equals("password"))
         if(name.equalsIgnoreCase("password")){
             System.out.println("Your name can't be password!");
         }

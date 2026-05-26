@@ -12,15 +12,15 @@ public class printf {
         // number = right justified padding
         // negative number = left justified padding
 
-        int id1 = 1;
-        int id2 = 23;
-        int id3 = 456;
-        int id4 = 7890;
+//        int id1 = 1;
+//        int id2 = 23;
+//        int id3 = 456;
+//        int id4 = 7890;
 
-        System.out.printf("%-4d\n", id1);
-        System.out.printf("%-4d\n", id2);
-        System.out.printf("%-4d\n", id3);
-        System.out.printf("%-4d\n", id4);
+//        System.out.printf("%-4d\n", id1);
+//        System.out.printf("%-4d\n", id2);
+//        System.out.printf("%-4d\n", id3);
+//        System.out.printf("%-4d\n", id4);
 
 //        System.out.printf("%4d\n", id1);
 //        System.out.printf("%4d\n", id2);
@@ -37,7 +37,7 @@ public class printf {
 //        System.out.printf("%d\n", id3);
 //        System.out.printf("%d\n", id4);
 
-/*
+
         // [flags]
 
         // + = output a plus
@@ -45,13 +45,13 @@ public class printf {
         // ( = negative numbers are enclosed in ()
         // space = display a minus if negative, space if positive
 
-        double price1 = 9.99;
-        double price2 = 100.15;
-        double price3 = -54.01;
-
-        System.out.printf("% .2f\n", price1);
-        System.out.printf("% .2f\n", price2);
-        System.out.printf("% .2f\n", price3);
+//        double price1 = 9.99;
+//        double price2 = 100.15;
+//        double price3 = -54.01;
+//
+//        System.out.printf("% .2f\n", price1);
+//        System.out.printf("% .2f\n", price2);
+//        System.out.printf("% .2f\n", price3);
 
 //        double price1 = 9.99;
 //        double price2 = 100.15;
@@ -72,7 +72,7 @@ public class printf {
 //        System.out.printf("%+.2f\n", price1);
 //        System.out.printf("%+.2f\n", price2);
 //        System.out.printf("%+.2f\n", price3);
-*/
+
 
 /*
         String name = "Spongebob";
