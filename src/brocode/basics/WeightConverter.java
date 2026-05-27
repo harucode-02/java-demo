@@ -35,7 +35,6 @@ public class WeightConverter {
         else{
             System.out.println("That was not a valid choice!");
         }
-
         scanner.close();
     }
 }

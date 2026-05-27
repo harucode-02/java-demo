@@ -7,7 +7,7 @@ public class TernaryOperator {
         // variable = (condition) ? ifTrue : ifFalse;
 
 //        int score = 55;
-//        String passOrFail = (score >= 60) ?  "PASS" : "FAIL";
+//        String passOrFail = (?score >= 60)   "PASS" : "FAIL";
 //        System.out.println(passOrFail);
 
 //        int number = 3;
