@@ -16,12 +16,11 @@ public class EnhancedSwitches {
         String day = scanner.nextLine();
 
         switch (day.toLowerCase()) {
-            case "monday", "tuesday", "wednesday", "thursday", "friday" ->
-                    System.out.println("It is a weekday 🥱");
-            case "saturday", "sunday" ->
-                    System.out.println("It is the weekend 😀");
+            case "monday", "tuesday", "wednesday", "thursday", "friday" -> System.out.println("It is a weekday 🥱");
+            case "saturday", "sunday" -> System.out.println("It is the weekend 😀");
             default -> System.out.println(day + " is not a day");
         }
 
+        scanner.close();
     }
 }
