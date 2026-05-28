@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class DiceRollerProgram {
     static void main(String[] args) {
-         // JAVA DICE ROLLER PROGRAM
+        // JAVA DICE ROLLER PROGRAM
 
         // DECLARE VARIABLES
         Scanner scanner = new Scanner(System.in);
@@ -17,10 +17,10 @@ public class DiceRollerProgram {
         System.out.print("Enter the # of dice to roll: ");
         numOfDice = scanner.nextInt();
 
-         // CHECK IF # OF DICE > 0
-        if(numOfDice > 0){
+        // CHECK IF # OF DICE > 0
+        if (numOfDice > 0) {
             // ROLL ALL THE DICE
-            for(int i = 0; i < numOfDice; i++){
+            for (int i = 0; i < numOfDice; i++) {
                 int roll = random.nextInt(1, 7);
                 printDie(roll);
                 System.out.println("You rolled: " + roll);
@@ -28,14 +28,14 @@ public class DiceRollerProgram {
                 total += roll;
             }
             System.out.println("Total: " + total);
-        }
-        else{
+        } else {
             System.out.println("# of dice must be greater than 0 ");
         }
         scanner.close();
     }
+
     //DISPLAY ASCII OF DICE
-    static void printDie(int roll){
+    static void printDie(int roll) {
 
         String dice1 = """
                  -------
@@ -85,7 +85,7 @@ public class DiceRollerProgram {
                  -------
                 """;
 
-        switch (roll){
+        switch (roll) {
             case 1 -> System.out.print(dice1);
             case 2 -> System.out.print(dice2);
             case 3 -> System.out.print(dice3);
