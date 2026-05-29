@@ -1,5 +1,6 @@
 package brocode.basics;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class SearchAnArray {
@@ -12,7 +13,7 @@ public class SearchAnArray {
         String target;
 
         System.out.print("Enter a fruit to search for: ");
-        target = scanner.nextLine();
+        target = scanner.nextLine().toLowerCase(Locale.ROOT);
 
         for(int i = 0; i < fruits.length; i++){
             if(fruits[i].equals(target)){

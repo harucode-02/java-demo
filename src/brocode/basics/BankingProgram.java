@@ -16,7 +16,7 @@ public class BankingProgram {
         boolean isRunning = true;
         int choice;
 
-        while(isRunning){
+        while (isRunning) {
             // DISPLAY MENU
             System.out.println("***************");
             System.out.println("BANKING PROGRAM");
@@ -31,7 +31,7 @@ public class BankingProgram {
             System.out.print("Enter your choice (1-4): ");
             choice = scanner.nextInt();
 
-            switch (choice){
+            switch (choice) {
                 case 1 -> showBalance(balance);
                 case 2 -> balance += deposit();
                 case 3 -> balance -= withdraw(balance);
@@ -47,23 +47,22 @@ public class BankingProgram {
     }
 
     // showBalance()
-    static void showBalance(double balance){
+    static void showBalance(double balance) {
         System.out.println("***************");
         System.out.printf("$%.2f\n", balance);
     }
 
     // deposit()
-    static double deposit(){
+    static double deposit() {
         double amount;
 
         System.out.print("Enter an amount to be deposited: ");
         amount = scanner.nextDouble();
 
-        if(amount < 0){
+        if (amount < 0) {
             System.out.println("Amount can't be negative");
             return 0;
-        }
-        else{
+        } else {
             return amount;
         }
     }
@@ -76,18 +75,14 @@ public class BankingProgram {
         System.out.print("Enter amount to be withdrawn: ");
         amount = scanner.nextDouble();
 
-        if(amount > balance){
+        if (amount > balance) {
             System.out.println("INSUFFICIENT FUNDS");
             return 0;
-        }
-        else if(amount < 0){
+        } else if (amount < 0) {
             System.out.println("Amount can't be negative");
             return 0;
-        }
-        else{
+        } else {
             return amount;
         }
-
     }
-
 }
