@@ -13,7 +13,7 @@ public class M05Friend {
     }
 
     static void showFriends(){
-        System.out.println("You have " + numOfFriends + " total friends");
+        System.out.println("You have " + numOfFriends + " total friendsd");
     }
 
 }
