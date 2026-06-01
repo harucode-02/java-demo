@@ -6,14 +6,14 @@ public class M02Student {
     double gpa;
     boolean isEnrolled;
 
-    M02Student(String name, int age, double gpa){
+    M02Student(String name, int age, double gpa) {
         this.name = name;
         this.age = age;
         this.gpa = gpa;
         this.isEnrolled = true;
     }
 
-    void study(){
+    void study() {
         System.out.println(this.name + " is studying");
     }
 }

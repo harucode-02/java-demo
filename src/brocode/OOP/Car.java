@@ -11,14 +11,17 @@ public class Car {
         isRunning = true;
         System.out.println("You start the engine");
     }
-    void stop(){
+
+    void stop() {
         isRunning = false;
         System.out.println("You stop the engine");
     }
-    void drive(){
+
+    void drive() {
         System.out.println("You drive the " + model);
     }
-    void brake(){
+
+    void brake() {
         System.out.println("You brake the " + model);
     }
 }

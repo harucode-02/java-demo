@@ -8,10 +8,10 @@ public class Main05 {
 
 //        Math.round(3.99);
 
-        M05Friend friend1 = new M05Friend("Spongebob");
-        M05Friend friend2 = new M05Friend("Patrick");
-        M05Friend friend3 = new M05Friend("Squidward");
-        M05Friend friend4 = new M05Friend("Sandy");
+        M05Friend friend1 = new M05Friend("Spongebob"); // this.name = "Spongebob" → object friend1 có name riêng
+        M05Friend friend2 = new M05Friend("Patrick"); // friend2 có name riêng = "Patrick"
+        M05Friend friend3 = new M05Friend("Squidward"); // Dòng 13, 14, 15: tạo thêm Squidward, Sandy, Gary
+        M05Friend friend4 = new M05Friend("Sandy"); // Mỗi lần new, constructor lại chạy numOfFriends++.
         M05Friend friend5 = new M05Friend("Gary");
 
         M05Friend.showFriends();

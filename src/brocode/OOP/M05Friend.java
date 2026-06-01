@@ -4,16 +4,16 @@ import org.w3c.dom.ls.LSOutput;
 
 public class M05Friend {
 
-    static int numOfFriends;
-    String name;
+    static int numOfFriends; // DÙNG CHUNG cho cả class
+    String name;  // RIÊNG mỗi object
 
-    M05Friend(String name) {
+    M05Friend(String name) { // constructor - chạy mỗi khi new
         this.name = name;
-        numOfFriends++;
+        numOfFriends++; // tăng biến chung lên 1
     }
 
     static void showFriends(){
-        System.out.println("You have " + numOfFriends + " total friendsd");
+        System.out.println("You have " + numOfFriends + " total friends");
     }
 
 }

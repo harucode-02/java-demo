@@ -14,6 +14,7 @@ public class Main03 {
         System.out.println(user4.username);
         System.out.println(user4.email);
         System.out.println(user4.age);
+
 //        System.out.println(user1.username);
 //        System.out.println(user1.email);
 //        System.out.println(user1.age);
