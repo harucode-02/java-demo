@@ -4,8 +4,7 @@ public class M06Organism {
 
     boolean isAlive;
 
-    M06Organism(){
+    M06Organism() {
         isAlive = true;
     }
-
 }
