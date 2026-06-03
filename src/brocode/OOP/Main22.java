@@ -10,15 +10,20 @@ public class Main22 {
     static void main(String[] args) {
         // How to PLAY AUDIO with Java (.wav, .au, .aiff)
 
+        // STAGE-01
         String filePath = "src/brocode/OOP/Visions - Patrick Jordan Patrikios.wav";
         File file = new File(filePath);
 
+        // STAGE-02
         try(Scanner scanner = new Scanner(System.in);
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
 
-           Clip clip = AudioSystem.getClip();
+        // STAGE-03
+            Clip clip = AudioSystem.getClip();
            clip.open(audioStream);
 
+
+        // STAGE-04
            String response = "";
 
            while(!response.equals("Q")){

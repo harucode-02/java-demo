@@ -12,6 +12,7 @@ public class Main23 {
     static void main(String[] args) {
         // JAVA HANGMAN GAME
 
+        // STAGE-01
         String filePath = "src/brocode/OOP/words.txt";
         ArrayList<String> words = new ArrayList<>();
 
@@ -26,10 +27,14 @@ public class Main23 {
             System.out.println("Something went wrong");
         }
 
+        // STAGE-02
         Random random = new Random();
-
+//        int totalWords = words.size();              // 4
+//        int randomIndex = random.nextInt(totalWords); // 2
+//        String word = words.get(randomIndex);        // "guitar"
         String word = words.get(random.nextInt(words.size()));
 
+        // STAGE-03
         Scanner scanner = new Scanner(System.in);
         ArrayList<Character> wordState = new ArrayList<>();
         int wrongGuesses = 0;
@@ -42,12 +47,12 @@ public class Main23 {
         System.out.println("Welcome to Java Hangman!");
         System.out.println("************************");
 
+        // STAGE-04
         while (wrongGuesses < 6) {
 
             System.out.println(getHangmanArt(wrongGuesses));
 
             System.out.print("Word: ");
-
             for (char c : wordState) {
                 System.out.print(c + " ");
             }
@@ -76,6 +81,8 @@ public class Main23 {
                 System.out.println("Wrong guess!");
             }
         }
+
+
         if (wrongGuesses >= 6) {
             System.out.print(getHangmanArt(wrongGuesses));
             System.out.println("GAME OVER!");
